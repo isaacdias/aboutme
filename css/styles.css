@@ -123,6 +123,9 @@ header {
 .projetos .grid {
     display: grid;
     gap: 2em;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
 }
 
 @media (min-width: 560px) {
@@ -134,8 +137,6 @@ header {
 @media (min-width: 830px) {
     .projetos .grid {
         grid-template-columns: repeat(3, 240px);
-        justify-content: center;
-        align-content: center;
         height: calc(100vh - 8em - 75px);
     }
 }
@@ -152,8 +153,6 @@ header {
     object-fit: cover;
     transition: transform 500ms;
 }
-
-
 
 .flip-card {
     perspective: 500px;   
