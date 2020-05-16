@@ -111,6 +111,7 @@ header {
     background-color: whitesmoke;
     margin-top: 1em;
     opacity: 80%;
+    border-radius: 10px;
 }
 @media (min-width: 1200px) {
     .sobre,
