@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/body-backgroundcolor.png");
+    background-size: 100vw 100vh;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 400px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 22px;
+    }
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu {
+    background-color: black;
+    position: fixed;
+    top: 0; 
+    width: 100vw;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    transition: background-color 1s, color 1s;
+}
+
+.menu a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.site-subtitle,
+.site-title {
+    text-align: center;
+}
+
+.site-title {
+    font-size: 4em;
+}
+
+.sobre, 
+.contatos,
+.projetos {
+    padding: 2em;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sobre h2,
+.contatos h2,
+.projetos h2 {
+    color: whitesmoke;
+    padding-top: 5px;
+    margin-bottom: 0.5em;
+    text-shadow: 0px 0px 5px black
+}
+
+
+.img-sobre {
+    border-radius: 100px;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.sobre p {
+    color:black;
+    text-indent: 3em;
+    margin-bottom: 0.5em;
+    text-align: justify;
+    font-size: 18px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.sobre .texto {
+    background-color: whitesmoke;
+    margin-top: 1em;
+    opacity: 80%;
+}
+@media (min-width: 1200px) {
+    .sobre,
+    .contatos,
+    .projetos {
+        max-width: 1200px;
+    }
+}
+
+.projetos .grid {
+    display: grid;
+    gap: 2em;
+}
+
+@media (min-width: 560px) {
+    .projetos .grid {
+        grid-template-columns: repeat(2, 200px);
+    }
+}
+
+@media (min-width: 830px) {
+    .projetos .grid {
+        grid-template-columns: repeat(3, 240px);
+        justify-content: center;
+        align-content: center;
+        height: calc(100vh - 8em - 75px);
+    }
+}
+
+.projetos figure {
+    text-align: center;
+}
+
+
+.img-projeto  {
+    border-radius: 10px;
+    width: 240px;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 500ms;
+}
+
+
+
+.flip-card {
+    perspective: 500px;   
+}
+
+.card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.flip-card:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+
+.card-back {
+    background-color: rgb(37, 37, 37);
+    height: 180px;
+    width: 100%;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+.contatos a {
+    color: black;
+    font-size: 3em;
+    margin: 10px;
+    transition: text-shadow 500ms;
+}
+
+.contatos a:hover {
+    text-decoration: none;
+    text-shadow: 10px 0px 10px whitesmoke;
+}
+
+.contatos .grid-icons {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
